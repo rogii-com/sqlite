@@ -32,6 +32,8 @@ if(NOT TARGET SQLite::SQLite3)
             PROPERTIES
                 IMPORTED_LOCATION
                     ${CMAKE_CURRENT_LIST_DIR}/bin/libsqlite3.so
+                IMPORTED_NO_SONAME
+                    TRUE
                 IMPORTED_LOCATION_DEBUG
                     ${CMAKE_CURRENT_LIST_DIR}/bin/libsqlite3d.so
     )
@@ -69,6 +71,8 @@ if(NOT TARGET sqlite3)
             PROPERTIES
                 IMPORTED_LOCATION
                     ${CMAKE_CURRENT_LIST_DIR}/bin/sqlite3
+                IMPORTED_NO_SONAME
+                    TRUE
         )
     endif()
 
